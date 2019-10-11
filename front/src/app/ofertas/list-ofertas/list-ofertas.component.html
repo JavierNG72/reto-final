@@ -10,6 +10,7 @@
             <th>Descripción</th>
             <th>Descuento</th>
             <th>Oferta caducada</th>
+            <th>BORRAR</th>
           </tr>
         </thead>
 
@@ -20,6 +21,7 @@
             <td>{{oferta.description}}</td>
             <td>{{oferta.discount}}</td>
             <td>{{oferta.expireDate}}</td>
+            <td><button (click)='deleteOferta(oferta.id, $event);'>Borrar</button></td>
           </tr>
         </tbody>
       </table>

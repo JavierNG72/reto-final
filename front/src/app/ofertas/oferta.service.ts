@@ -9,7 +9,6 @@ import { Observable } from 'rxjs';
 })
 export class OfertaService {
 
-  
   entity_url = environment.REST_API_URL + 'ofertas';
 
   constructor(private http: HttpClient) {}

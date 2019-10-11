@@ -27,14 +27,14 @@ export class OfertaEditComponent implements OnInit {
   onSubmit(oferta: Oferta) {
     var that = this;
     this.ofertaService.updateOferta(oferta.id.toString(), oferta).subscribe(
-      res => this.gotoOfertaDetail(oferta),
+      res => this.gotoOfertasList(),
       error => this.errorMessage = <any> error
     )
   }
 
-  gotoOfertaDetail(oferta: Oferta) {
+  gotoOfertasList() {
     this.errorMessage = null;
-    this.router.navigate(['/ofertas', oferta.id]);
+    this.router.navigate(['/ofertas']);
   }
 
 
