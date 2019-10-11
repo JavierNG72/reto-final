@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="container xd-container">
+    <h2>Ofertas</h2>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Descripción</th>
+            <th>Descuento</th>
+            <th>Oferta caducada</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let oferta of ofertas">
+            <td class="idOfertas"><a routerLink="/ofertas">{{oferta.id}}</a></td>
+            <td>{{oferta.title}}</td>
+            <td>{{oferta.description}}</td>
+            <td>{{oferta.discount}}</td>
+            <td>{{oferta.expireDate}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="container xd-container">
+    <h2>
+      Edit Oferta
+    </h2>
+
+    <form (ngSubmit)="onSubmit(ofertaForm.value)" #ofertaForm="ngForm" class="form-horizontal">
+
+      <div class="form-group has-feedback" >
+        <label for="title" class="col-sm-2 control-label">Title</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="title" [(ngModel)]="oferta.title" minlength="2" required name="title" #title="ngModel"/>       
+        </div>
+      </div>
+      <div class="form-group has-feedback">
+        <label for="description" class="col-sm-2 control-label">Description</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="description" [(ngModel)]="oferta.description" name="description" minlength="2" required #description="ngModel"/>
+        </div>
+      </div>
+      <div class="form-group has-feedback" >
+        <label for="discount" class="col-sm-2 control-label">Discount</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="discount" [(ngModel)]="oferta.discount" name="discount" required #discount="ngModel"/>
+        </div>
+      </div>
+      <div class="form-group has-feedback" >
+        <label for="expireDate" class="col-sm-2 control-label">Expire Date</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="city" [(ngModel)]="oferta.expireDate" name="expireDate" required #expireDate="ngModel"/>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

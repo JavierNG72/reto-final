@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="container xd-container">
+
+    <h2>Información de la oferta</h2>
+
+    <table class="table table-striped">
+      <tr>
+        <th>Id</th>
+        <td><b>{{Oferta.id}}</b></td>
+      </tr>
+      <tr>
+        <th>Titulo</th>
+        <td>{{Oferta.title}}</td>
+      </tr>
+      <tr>
+        <th>Descripción</th>
+        <td>{{Oferta.description}}</td>
+      </tr>
+      <tr>
+        <th>Descuento</th>
+        <td>{{Oferta.discount}}</td>
+      </tr>
+      <tr>
+        <th>Fecha de caducidad</th>
+        <th>Fecha de caducidad</th>
+        <td>{{Oferta.discount}}</td>
+      </tr>
+    </table>
+
+    <button class="btn btn-default" (click)="gotoOfertasList()">
+      < Back</button> <button class="btn btn-default" (click)="editOferta()">Editar Oferta
+    </button>
+    <button class="btn btn-default" (click)="deleteOferta(Oferta)">Añadir nueva oferta</button>
+
+  </div>
+</div>
